@@ -1,10 +1,53 @@
-body {
+*, *::before, *::after {
+	box-sizing: border-box;
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	padding: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', system-ui, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+:root {
+/* Sizing */
+	--quarter-rem: .25rem;
+	--half-rem: .5rem;
+	--three-quarter-rem: .75rem;
+	--full-rem: 1rem;
+	--full-quarter-rem: 1.25rem;
+	--full-half-rem: 1.5rem;
+	
+/* Colors */
+	--color-page-background: #f7f7f7;
+	--color-dark: #000137;
+	--color-medium-dark: #02055a;
+	--color-medium-light: #021988;
+	--color-light: #253da1;
+	--color-extra-light: hsla(228, 63%, 70%, 1);
+
+	--color-inactive-user: #e30e02;
+
+/* Navbar Colors */
+	--color-navbar-background: #095d68;
+	--color-navbar-background-medium: #0d8696;
+	--color-navbar-background-light: #11b0c5;
+
+/* Navbar */
+	--navbar-height: 3rem;
+	--navbar-link-color: #a0a0a0;
+	--navbar-link-hover-color: #f0f0f0;
+	--navbar-corner-radius: .75rem;
+	--navbar-border-size: 2px;
+
+	--first-half-logo-centering: calc(100vw / 2) - calc(var(--half-rem) + var(--full-rem) + 1px);
+	--second-half-logo-centering: calc(calc(var(--navbar-height) * .625) / 2);
+	--mobile-logo-ceter-right-margins: calc(var(--first-half-logo-centering) - var(--second-half-logo-centering));
+}
+
+/*.user-inactive {
+	color: var(--color-inactive-user);
+}*/
+
+body {
+	background-color: var(--color-page-background);
+	font-size: var(--three-quarter-rem);
 }
