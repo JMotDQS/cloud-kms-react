@@ -43,10 +43,6 @@
 	--mobile-logo-ceter-right-margins: calc(var(--first-half-logo-centering) - var(--second-half-logo-centering));
 }
 
-/*.user-inactive {
-	color: var(--color-inactive-user);
-}*/
-
 body {
 	background-color: var(--color-page-background);
 	font-size: var(--three-quarter-rem);
