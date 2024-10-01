@@ -28,6 +28,8 @@ header {
 	font-weight: 600;
 	font-size: calc(var(--full-rem) * .875);
 	color: var(--navbar-link-color);
+	background-color: transparent;
+	border: none;
 }
 .navbar-link {
 	padding: var(--full-rem) var(--half-rem);
