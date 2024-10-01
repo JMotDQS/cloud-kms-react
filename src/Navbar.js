@@ -23,17 +23,14 @@ function Navbar() {
 							<button id="search-clear-button">Clear</button>
 						</li>
 						<li>
-							{/*<a className="navbar-item navbar-link" href="/">Add User</a>*/}
 							<button className="navbar-item navbar-link" href="/">Add User</button>
 						</li>
 						<li className="navbar-item nav-item-divider">|</li>
 						<li>
-							{/*<a className="navbar-item navbar-link" href="/">Item Association</a>*/}
 							<button className="navbar-item navbar-link">Item Association</button>
 						</li>
 						<li className="navbar-item nav-item-divider">|</li>
 						<li>
-							{/*<a className="navbar-item navbar-link" href="/">Generate Reports</a>*/}
 							<button className="navbar-item navbar-link">Generate Reports</button>
 						</li>
 					</ul>
