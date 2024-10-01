@@ -32,7 +32,7 @@ header {
 	border: none;
 }
 .navbar-link {
-	padding: var(--full-rem) var(--half-rem);
+	padding-inline: var(--half-rem);
 	cursor: pointer;
 }
 .navbar-link:hover {
