@@ -21,12 +21,11 @@ function App() {
 		default:
 			break;
 	}*/
-	return (
-		<div className="App">
+	return 
+		{/*<div className="App">*/}
 			<Navbar />
 			{/*<Component />*/}
-		</div>
-	);
+		{/*</div>*/}
 }
 
 export default App;
