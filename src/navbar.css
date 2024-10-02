@@ -16,7 +16,7 @@ header {
 .nav-logo {
 	margin: 0;
 	height: calc(var(--navbar-height) * .75);
-	cursor: pointer;
+	/*cursor: pointer;*/
 }
 
 .nav-links li {
@@ -33,13 +33,14 @@ header {
 }
 .navbar-link {
 	padding-inline: var(--half-rem);
+	text-decoration: none;
 	cursor: pointer;
+}
+.navbar-link.active {
+	color: var(--navbar-link-active-color);
 }
 .navbar-link:hover {
 	color: var(--navbar-link-hover-color);
-}
-.nav-links li:nth-last-child(2) .navbar-link {
-	padding-right: 0px;
 }
 .nav-item-divider {
 	color: var(--navbar-link-hover-color);

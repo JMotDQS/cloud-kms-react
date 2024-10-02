@@ -27,14 +27,15 @@
 	--color-inactive-user: #e30e02;
 
 /* Navbar Colors */
-	--color-navbar-background: #095d68;
-	--color-navbar-background-medium: #0d8696;
-	--color-navbar-background-light: #11b0c5;
+	--color-navbar-background: #074692;
+	--color-navbar-background-medium: #3c90f6;
+	--color-navbar-background-light: #cee3fd;
 
 /* Navbar */
 	--navbar-height: 3rem;
 	--navbar-link-color: #a0a0a0;
 	--navbar-link-hover-color: #f0f0f0;
+	--navbar-link-active-color: #86ee86;
 	--navbar-corner-radius: .75rem;
 	--navbar-border-size: 2px;
 

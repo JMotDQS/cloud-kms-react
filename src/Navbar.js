@@ -9,7 +9,7 @@ function Navbar() {
 
 				<nav id="nav">
 					<ul className="nav-links">
-						<li>
+						{/*<li>
 							<div className="search-container">
 								<form className="nav-search-form" method="POST">
 									<input id="nav-search-field" type="text" placeholder="User Search" name="nav-search-field" />
@@ -18,21 +18,23 @@ function Navbar() {
 										</div>
 								</form>
 							</div>
-						</li>
+						</li>*/}
 						<li>
-							<button id="search-clear-button">Clear</button>
-						</li>
-						<li>
-							<button className="navbar-item navbar-link" href="/">Add User</button>
+						<a className="navbar-item navbar-link" href="/reports">Reports</a>
 						</li>
 						<li className="navbar-item nav-item-divider">|</li>
 						<li>
-							<button className="navbar-item navbar-link">Item Association</button>
+							<a className="navbar-item navbar-link" href="/search">Inv. Search</a>
 						</li>
 						<li className="navbar-item nav-item-divider">|</li>
+						<li>
+							{/*<button className="navbar-item navbar-link" onClick={myFunction}>KMS</button>*/}
+							<a className="navbar-item navbar-link" href="/">KMS</a>
+						</li>
+						{/*<li className="navbar-item nav-item-divider">|</li>
 						<li>
 							<button className="navbar-item navbar-link">Generate Reports</button>
-						</li>
+						</li>*/}
 					</ul>
 				</nav>
 			</header>
