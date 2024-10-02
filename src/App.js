@@ -1,10 +1,10 @@
 import Navbar from './Navbar';
-//import Home from './pages/Home';
+/*import Home from './pages/Home';
 import Search from './pages/Reports';
-import Reports from './pages/Reports';
+import Reports from './pages/Reports';*/
 
 function App() {
-	let Component;
+	/*let Component;
 	switch(window.location) {
 		case "/":
 		Component = App;	
@@ -20,11 +20,11 @@ function App() {
 
 		default:
 			break;
-	}
+	}*/
 	return (
 		<div className="App">
 			<Navbar />
-			<Component />
+			{/*<Component />*/}
 		</div>
 	);
 }
