@@ -4,18 +4,18 @@ import Search from './pages/Search'
 import Reports from './pages/Reports'
 
 function App() {
-	let Component;
+	let component;
 	switch(window.location.pathname) {
 		case "/":
-			Component = <Home />
+			component = <Home />
 			break;
 
 		case "/search":
-			Component = <Search />
+			component = <Search />
 			break;
 
 		case "/reports":
-			Component = <Reports />
+			component = <Reports />
 			break;
 
 		default:
@@ -24,7 +24,7 @@ function App() {
 	return (
 		<>
 			<Navbar />
-			<Component />
+			{component}
 		</>
 	)
 }
