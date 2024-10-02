@@ -36,8 +36,9 @@ nav {
 	text-decoration: none;
 	cursor: pointer;
 }
-.navbar-link.active {
+li.active .navbar-link {
 	color: var(--navbar-link-active-color);
+	cursor: default;
 }
 .navbar-link:hover {
 	color: var(--navbar-link-hover-color);

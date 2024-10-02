@@ -48,3 +48,7 @@ body {
 	background-color: var(--color-page-background);
 	font-size: var(--three-quarter-rem);
 }
+
+.main-container {
+	padding-inline: var(--full-rem);
+}
