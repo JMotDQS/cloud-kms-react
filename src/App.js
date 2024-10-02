@@ -21,11 +21,7 @@ function App() {
 		default:
 			break;
 	}*/
-	return 
-		{/*<div className="App">*/}
-			<Navbar />
-			{/*<Component />*/}
-		{/*</div>*/}
+	return <Navbar />
 }
 
 export default App;
