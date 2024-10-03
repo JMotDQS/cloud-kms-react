@@ -1,5 +1,6 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './css/home.css';
 
 export default function Home() {
 	return (
