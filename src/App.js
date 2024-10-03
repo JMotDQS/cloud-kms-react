@@ -1,7 +1,9 @@
 import Navbar from './Navbar';
 import Home from './pages/Home';
+import Containers from './pages/Containers';
 import Search from './pages/Search';
 import Reports from './pages/Reports';
+import Dashboard from './pages/Dashboard';
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -11,8 +13,10 @@ function App() {
 			<div className="main-container">
 				<Routes>
 					<Route path="/" element={<Home />} />
+					<Route path="/containers" element={<Containers />} />
 					<Route path="/search" element={<Search />} />
 					<Route path="/reports" element={<Reports />} />
+					<Route path="/dashboard" element={<Dashboard />} />
 				</Routes>
 			</div>
 		</>
