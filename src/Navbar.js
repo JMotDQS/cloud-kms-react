@@ -1,5 +1,4 @@
 import logo from './DQS_logo.svg';
-import './css/navbar.css';
 import CustomLink from './CustomLink';
 
 function Navbar() {
