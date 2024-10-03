@@ -39,10 +39,6 @@
 	--navbar-corner-radius: .75rem;
 	--navbar-border-size: 2px;
 
-	--first-half-logo-centering: calc(100vw / 2) - calc(var(--half-rem) + var(--full-rem) + 1px);
-	--second-half-logo-centering: calc(calc(var(--navbar-height) * .625) / 2);
-	--mobile-logo-ceter-right-margins: calc(var(--first-half-logo-centering) - var(--second-half-logo-centering));
-
 /* Section Colors */
 	--color-search-background: hsla(27 82% 37% / .15);
 	--color-search-dark: hsla(27 82% 37% / 1);
