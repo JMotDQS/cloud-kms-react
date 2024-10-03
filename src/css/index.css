@@ -42,6 +42,16 @@
 	--first-half-logo-centering: calc(100vw / 2) - calc(var(--half-rem) + var(--full-rem) + 1px);
 	--second-half-logo-centering: calc(calc(var(--navbar-height) * .625) / 2);
 	--mobile-logo-ceter-right-margins: calc(var(--first-half-logo-centering) - var(--second-half-logo-centering));
+
+/* Section Colors */
+	--color-search-background: hsla(27 82% 37% / .15);
+	--color-search-dark: hsla(27 82% 37% / 1);
+	--color-reports-background: hsl(61 82% 43% / .15);
+	--color-reports-dark: hsl(61 82% 43% / 1);
+	--color-containers-background: hsla(315 82% 37% / 0.15);
+	--color-containers-dark: hsla(315 82% 37% / 1);
+	--color-dashboard-background: hsla(80 82% 31% / 0.15);
+	--color-dashboard-dark: hsla(80 82% 31% / 1);
 }
 
 body {

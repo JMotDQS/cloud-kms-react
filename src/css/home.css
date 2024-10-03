@@ -13,3 +13,39 @@
 	padding: var(--half-rem);
 	text-align: center;
 }
+
+.card-containers {
+	border-color: var(--color-containers-dark);
+	background-color: var(--color-containers-background);
+}
+.card-containers .card-icon {
+	font-size: calc(var(--full-rem) * 2);
+	color: var(--color-containers-dark);
+}
+
+.card-search {
+	border-color: var(--color-search-dark);
+	background-color: var(--color-search-background);
+}
+.card-search .card-icon {
+	font-size: calc(var(--full-rem) * 2);
+	color: var(--color-search-dark);
+}
+
+.card-reports {
+	border-color: var(--color-reports-dark);
+	background-color: var(--color-reports-background);
+}
+.card-reports .card-icon {
+	font-size: calc(var(--full-rem) * 2);
+	color: var(--color-reports-dark);
+}
+
+.card-dashboard {
+	border-color: var(--color-dashboard-dark);
+	background-color: var(--color-dashboard-background);
+}
+.card-dashboard .card-icon {
+	font-size: calc(var(--full-rem) * 2);
+	color: var(--color-dashboard-dark);
+}
