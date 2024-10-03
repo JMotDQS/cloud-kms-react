@@ -1,5 +1,5 @@
 import logo from './DQS_logo.svg';
-import CustomLink from './CustomLink';
+import NavbarCustomLink from './NavbarCustomLink';
 
 function Navbar() {
 	return (
@@ -7,15 +7,15 @@ function Navbar() {
 			<nav id="nav">
 				<img src={logo} id="logo-header" className="nav-logo" data-page='kms' alt="" />
 				<ul className="nav-links">
-					<CustomLink to="/containers">Containers</CustomLink>
+					<NavbarCustomLink to="/containers">Containers</NavbarCustomLink>
 					<li className="navbar-item nav-item-divider">|</li>
-					<CustomLink to="/search">Search</CustomLink>
+					<NavbarCustomLink to="/search">Search</NavbarCustomLink>
 					<li className="navbar-item nav-item-divider">|</li>
-					<CustomLink to="/reports">Reports</CustomLink>
+					<NavbarCustomLink to="/reports">Reports</NavbarCustomLink>
 					<li className="navbar-item nav-item-divider">|</li>
-					<CustomLink to="/dashboard">Dashboard</CustomLink>
+					<NavbarCustomLink to="/dashboard">Dashboard</NavbarCustomLink>
 					<li className="navbar-item nav-item-divider">|</li>
-					<CustomLink to="/">KMS</CustomLink>
+					<NavbarCustomLink to="/">KMS</NavbarCustomLink>
 				</ul>
 			</nav>
 		</>

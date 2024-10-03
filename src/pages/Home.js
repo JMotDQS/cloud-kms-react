@@ -1,9 +1,9 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import CustomLink from '../CustomLink';
+//import CustomLink from '../CustomLink';
 
 export default function Home() {
-	const sections = [
+	{/*const sections = [
 		{
 			id: 1,
 			section: "Containers",
@@ -32,11 +32,11 @@ export default function Home() {
 			icon: "fas fa-tachometer-alt",
 			link: "/dashboard"
 		}
-	]
+	];*/}
 	return (
 		<>
 			<div className="grid-container">
-
+			{/*}
 				{sections.map(section => (
 					<CustomLink to={section.link}>
 						<div className="card" key={section.id}>
@@ -46,9 +46,9 @@ export default function Home() {
 						</div>
 					</CustomLink>
 				))}
+			*/}
 
-
-				{/*<div className="card">
+				<div className="card">
 					<h1>Home</h1>
 					<p>
 						<FontAwesomeIcon icon="fas fa-search" />
@@ -121,7 +121,7 @@ export default function Home() {
 					<p>
 						<FontAwesomeIcon icon="fas fa-chart-line" />
 					</p>
-				</div>*/}
+				</div>
 			</div>
 		</>
 	)
