@@ -1,9 +1,14 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-//import CustomLink from '../CustomLink';
+import { useNavigate } from 'react-router-dom';
 
 export default function Home() {
-	{/*const sections = [
+	const navigate = useNavigate();
+	const onClickNavigate = (link) => {
+		navigate(link);
+	}
+
+	const sections = [
 		{
 			id: 1,
 			section: "Containers",
@@ -32,96 +37,19 @@ export default function Home() {
 			icon: "fas fa-tachometer-alt",
 			link: "/dashboard"
 		}
-	];*/}
+	];
 	return (
 		<>
 			<div className="grid-container">
-			{/*}
+			
 				{sections.map(section => (
-					<CustomLink to={section.link}>
-						<div className="card" key={section.id}>
-							<h1>{section.section}</h1>
-							<p>{section.body}</p>
-							<p><FontAwesomeIcon icon={section.icon} /></p>
-						</div>
-					</CustomLink>
+					<div className="card" key={section.id} onClick={() => onClickNavigate(section.link)}>
+						<h1>{section.section}</h1>
+						<p>{section.body}</p>
+						<p className="card-icon"><FontAwesomeIcon icon={section.icon} /></p>
+					</div>
 				))}
-			*/}
-
-				<div className="card">
-					<h1>Home</h1>
-					<p>
-						<FontAwesomeIcon icon="fas fa-search" />
-					</p>
-					<p>
-						<FontAwesomeIcon icon="fas fa-file-alt" />
-					</p>
-					<p>
-						<FontAwesomeIcon icon="far fa-file-alt" />
-					</p>
-					<p>
-						<FontAwesomeIcon icon="fas fa-box-open" />
-					</p>
-					<p>
-						<FontAwesomeIcon icon="fas fa-cube" />
-					</p>
-					<p>
-						<FontAwesomeIcon icon="fas fa-tachometer-alt" />
-					</p>
-					<p>
-						<FontAwesomeIcon icon="fas fa-chart-line" />
-					</p>
-				</div>
 				
-				<div className="card">
-					<h1>Home</h1>
-					<p>
-						<FontAwesomeIcon icon="fas fa-search" />
-					</p>
-					<p>
-						<FontAwesomeIcon icon="fas fa-file-alt" />
-					</p>
-					<p>
-						<FontAwesomeIcon icon="far fa-file-alt" />
-					</p>
-					<p>
-						<FontAwesomeIcon icon="fas fa-box-open" />
-					</p>
-					<p>
-						<FontAwesomeIcon icon="fas fa-cube" />
-					</p>
-					<p>
-						<FontAwesomeIcon icon="fas fa-tachometer-alt" />
-					</p>
-					<p>
-						<FontAwesomeIcon icon="fas fa-chart-line" />
-					</p>
-				</div>
-
-				<div className="card">
-					<h1>Home</h1>
-					<p>
-						<FontAwesomeIcon icon="fas fa-search" />
-					</p>
-					<p>
-						<FontAwesomeIcon icon="fas fa-file-alt" />
-					</p>
-					<p>
-						<FontAwesomeIcon icon="far fa-file-alt" />
-					</p>
-					<p>
-						<FontAwesomeIcon icon="fas fa-box-open" />
-					</p>
-					<p>
-						<FontAwesomeIcon icon="fas fa-cube" />
-					</p>
-					<p>
-						<FontAwesomeIcon icon="fas fa-tachometer-alt" />
-					</p>
-					<p>
-						<FontAwesomeIcon icon="fas fa-chart-line" />
-					</p>
-				</div>
 			</div>
 		</>
 	)
