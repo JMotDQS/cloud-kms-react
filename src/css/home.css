@@ -1,3 +1,17 @@
 .grid-container {
 	display: grid;
+	margin-inline: auto;
+	gap: var(--quarter-rem);
+	justify-items: center;
+	align-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.card {
+	border: 1px solid #000000;
+	border-radius: var(--half-rem);
+	min-width: 400px;
+	/*max-width: 1fr;*/
+	padding: var(--half-rem);
+	text-align: center;
 }
