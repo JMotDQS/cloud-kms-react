@@ -12,7 +12,7 @@ export default function Home() {
 		{
 			id: 1,
 			section: "Containers",
-			body: "Container Stuff",
+			body: "Create, Fill, & Empty Containers",
 			icon: "fas fa-box-open",
 			link: "/containers",
 			class: "card-containers"
@@ -20,7 +20,7 @@ export default function Home() {
 		{
 			id: 2,
 			section: "Search",
-			body: "Search Stuff",
+			body: "Lookup VINs & Slots",
 			icon: "fas fa-search",
 			link: "/search",
 			class: "card-search"
@@ -28,7 +28,7 @@ export default function Home() {
 		{
 			id: 3,
 			section: "Reports",
-			body: "Report Stuff",
+			body: "Generate Any & All Reports",
 			icon: "fas fa-file-alt",
 			link: "/reports",
 			class: "card-reports"
@@ -49,7 +49,7 @@ export default function Home() {
 				{sections.map(section => (
 					<div className={`card ${section.class}`} key={section.id} onClick={() => onClickNavigate(section.link)}>
 						<h1>{section.section}</h1>
-						<p>{section.body}</p>
+						<p className="card-body">{section.body}</p>
 						<p className="card-icon"><FontAwesomeIcon icon={section.icon} /></p>
 					</div>
 				))}

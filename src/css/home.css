@@ -4,7 +4,7 @@
 	gap: var(--full-rem);
 	justify-content: stretch;
 	align-items: center;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
 }
 
 .card {
@@ -13,6 +13,11 @@
 	padding: var(--half-rem);
 	text-align: center;
 	cursor: pointer;
+}
+
+.card-body {
+	font-weight: 500;
+	font-size: var(--full-rem);
 }
 
 .card-containers {
@@ -73,4 +78,15 @@
 }
 .card-dashboard:hover .card-icon {
 	color: var(--color-content-hover);
+}
+
+@media (width < 600px) {
+	.grid-container {
+		display: grid;
+		margin-inline: auto;
+		gap: var(--full-rem);
+		justify-content: stretch;
+		align-items: center;
+		grid-template-columns: 1fr;
+	}
 }
