@@ -23,6 +23,12 @@
 	font-size: calc(var(--full-rem) * 2);
 	color: var(--color-containers-dark);
 }
+.card-containers:hover {
+	background-color: var(--color-containers-hover);
+}
+.card-containers:hover .card-icon {
+	color: var(--color-content-hover);
+}
 
 .card-search {
 	border-color: var(--color-search-dark);
@@ -31,6 +37,12 @@
 .card-search .card-icon {
 	font-size: calc(var(--full-rem) * 2);
 	color: var(--color-search-dark);
+}
+.card-search:hover {
+	background-color: var(--color-search-hover);
+}
+.card-search:hover .card-icon {
+	color: var(--color-content-hover);
 }
 
 .card-reports {
@@ -41,6 +53,12 @@
 	font-size: calc(var(--full-rem) * 2);
 	color: var(--color-reports-dark);
 }
+.card-reports:hover {
+	background-color: var(--color-reports-hover);
+}
+.card-reports:hover .card-icon {
+	color: var(--color-content-hover);
+}
 
 .card-dashboard {
 	border-color: var(--color-dashboard-dark);
@@ -49,4 +67,10 @@
 .card-dashboard .card-icon {
 	font-size: calc(var(--full-rem) * 2);
 	color: var(--color-dashboard-dark);
+}
+.card-dashboard:hover {
+	background-color: var(--color-dashboard-hover);
+}
+.card-dashboard:hover .card-icon {
+	color: var(--color-content-hover);
 }
