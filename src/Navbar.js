@@ -7,15 +7,16 @@ function Navbar() {
 			<nav id="nav">
 				<img src={logo} id="logo-header" className="nav-logo" data-page='kms' alt="" />
 				<ul className="nav-links">
-					<NavbarCustomLink to="/containers">Containers</NavbarCustomLink>
+					{/*<NavbarCustomLink to="/containers">Containers</NavbarCustomLink>
 					<li className="navbar-item nav-item-divider">|</li>
 					<NavbarCustomLink to="/search">Search</NavbarCustomLink>
 					<li className="navbar-item nav-item-divider">|</li>
 					<NavbarCustomLink to="/reports">Reports</NavbarCustomLink>
 					<li className="navbar-item nav-item-divider">|</li>
-					<NavbarCustomLink to="/dashboard">Dashboard</NavbarCustomLink>
+					<NavbarCustomLink to="/dashboard">Dashboard</NavbarCustomLink>*/}
 					<li className="navbar-item nav-item-divider">|</li>
 					<NavbarCustomLink to="/">KMS</NavbarCustomLink>
+					<li className="navbar-item nav-item-divider">|</li>
 				</ul>
 			</nav>
 		</>
