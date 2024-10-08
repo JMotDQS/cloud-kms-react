@@ -11,6 +11,14 @@ export default function Home() {
 	const sections = [
 		{
 			id: 1,
+			section: "Labels",
+			body: "Print QR Code VIN labels",
+			icon: "fas fa-qrcode",
+			link: "/labels",
+			class: "card-labels"
+		},
+		{
+			id: 2,
 			section: "Containers",
 			body: "Create, Fill, & Empty Containers",
 			icon: "fas fa-box-open",
@@ -18,7 +26,7 @@ export default function Home() {
 			class: "card-containers"
 		},
 		{
-			id: 2,
+			id: 3,
 			section: "Search",
 			body: "Lookup VINs & Slots",
 			icon: "fas fa-search",
@@ -26,7 +34,7 @@ export default function Home() {
 			class: "card-search"
 		},
 		{
-			id: 3,
+			id: 4,
 			section: "Reports",
 			body: "Generate Any & All Reports",
 			icon: "fas fa-file-alt",
@@ -34,7 +42,7 @@ export default function Home() {
 			class: "card-reports"
 		},
 		{
-			id: 4,
+			id: 5,
 			section: "Dashboard",
 			body: "Dashboard Stuff",
 			icon: "fas fa-tachometer-alt",

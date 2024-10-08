@@ -20,6 +20,21 @@
 	font-size: var(--full-rem);
 }
 
+.card-labels {
+	border-color: var(--color-labels-dark);
+	background-color: var(--color-labels-background);
+}
+.card-labels .card-icon {
+	font-size: calc(var(--full-rem) * 2);
+	color: var(--color-labels-dark);
+}
+.card-labels:hover {
+	background-color: var(--color-labels-hover);
+}
+.card-labels:hover .card-icon {
+	color: var(--color-content-hover);
+}
+
 .card-containers {
 	border-color: var(--color-containers-dark);
 	background-color: var(--color-containers-background);

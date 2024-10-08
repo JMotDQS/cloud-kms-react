@@ -40,21 +40,29 @@
 	--navbar-border-size: 2px;
 
 /* Section Colors */
-	--alpha-background: 0.15;
+	--alpha-background: 0.20;
 	--alpha-hover: 0.35;
 	--color-content-hover: #ffffff;
-	--color-search-background: hsla(27 82% 37% / var(--alpha-background));
-	--color-search-dark: hsla(27 82% 37% / 1);
-	--color-search-hover: hsla(27 82% 37% / var(--alpha-hover));
-	--color-reports-background: hsl(61 82% 43% / var(--alpha-background));
-	--color-reports-dark: hsl(61 82% 43% / 1);
-	--color-reports-hover: hsl(61 82% 43% / var(--alpha-hover));
-	--color-containers-background: hsla(315 82% 37% / var(--alpha-background));
-	--color-containers-dark: hsla(315 82% 37% / 1);
-	--color-containers-hover: hsla(315 82% 37% / var(--alpha-hover));
-	--color-dashboard-background: hsla(80 82% 31% / var(--alpha-background));
-	--color-dashboard-dark: hsla(80 82% 31% / 1);
-	--color-dashboard-hover: hsla(80 82% 31% / var(--alpha-hover));
+
+	--color-labels-background: hsla(181 82% 43% / var(--alpha-background));
+	--color-labels-dark: hsla(181 82% 43% / 1);
+	--color-labels-hover: hsla(181 82% 43% / var(--alpha-hover));
+
+	--color-search-background: hsla(27 82% 43% / var(--alpha-background));
+	--color-search-dark: hsla(27 82% 43% / 1);
+	--color-search-hover: hsla(27 82% 43% / var(--alpha-hover));
+
+	--color-reports-background: hsl(51 82% 43% / var(--alpha-background));
+	--color-reports-dark: hsl(51 82% 43% / 1);
+	--color-reports-hover: hsl(51 82% 43% / var(--alpha-hover));
+
+	--color-containers-background: hsla(315 82% 43% / var(--alpha-background));
+	--color-containers-dark: hsla(315 82% 43% / 1);
+	--color-containers-hover: hsla(315 82% 43% / var(--alpha-hover));
+
+	--color-dashboard-background: hsla(80 82% 43% / var(--alpha-background));
+	--color-dashboard-dark: hsla(80 82% 43% / 1);
+	--color-dashboard-hover: hsla(80 82% 43% / var(--alpha-hover));
 }
 
 body {
