@@ -20,6 +20,36 @@
 	font-size: var(--full-rem);
 }
 
+.card-checkin {
+	border-color: var(--color-checkin-dark);
+	background-color: var(--color-checkin-background);
+}
+.card-checkin .card-icon {
+	font-size: calc(var(--full-rem) * 2);
+	color: var(--color-checkin-dark);
+}
+.card-checkin:hover {
+	background-color: var(--color-checkin-hover);
+}
+.card-checkin:hover .card-icon {
+	color: var(--color-content-hover);
+}
+
+.card-checkout {
+	border-color: var(--color-checkout-dark);
+	background-color: var(--color-checkout-background);
+}
+.card-checkout .card-icon {
+	font-size: calc(var(--full-rem) * 2);
+	color: var(--color-checkout-dark);
+}
+.card-checkout:hover {
+	background-color: var(--color-checkout-hover);
+}
+.card-checkout:hover .card-icon {
+	color: var(--color-content-hover);
+}
+
 .card-labels {
 	border-color: var(--color-labels-dark);
 	background-color: var(--color-labels-background);

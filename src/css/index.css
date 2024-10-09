@@ -44,6 +44,14 @@
 	--alpha-hover: 0.35;
 	--color-content-hover: #ffffff;
 
+	--color-checkin-background: hsla(280 82% 43% / var(--alpha-background));
+	--color-checkin-dark: hsla(280 82% 43% / 1);
+	--color-checkin-hover: hsla(280 82% 43% / var(--alpha-hover));
+
+	--color-checkout-background: hsla(135 82% 43% / var(--alpha-background));
+	--color-checkout-dark: hsla(135 82% 43% / 1);
+	--color-checkout-hover: hsla(135 82% 43% / var(--alpha-hover));
+
 	--color-labels-background: hsla(181 82% 43% / var(--alpha-background));
 	--color-labels-dark: hsla(181 82% 43% / 1);
 	--color-labels-hover: hsla(181 82% 43% / var(--alpha-hover));

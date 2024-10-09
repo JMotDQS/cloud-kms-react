@@ -5,6 +5,8 @@ import Search from './pages/Search';
 import Reports from './pages/Reports';
 import Dashboard from './pages/Dashboard';
 import Labels from './pages/Labels';
+import CheckIn from './pages/CheckIn';
+import CheckOut from './pages/CheckOut';
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
 					<Route path="/reports" element={<Reports />} />
 					<Route path="/dashboard" element={<Dashboard />} />
 					<Route path="/labels" element={<Labels />} />
+					<Route path="/checkin" element={<CheckIn />} />
+					<Route path="/checkout" element={<CheckOut />} />
 				</Routes>
 			</div>
 		</>

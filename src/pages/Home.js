@@ -19,14 +19,22 @@ export default function Home() {
 		},
 		{
 			id: 2,
-			section: "Containers",
-			body: "Create, Fill, & Empty Containers",
-			icon: "fas fa-box-open",
-			link: "/containers",
-			class: "card-containers"
+			section: "Check In",
+			body: "Key Check In",
+			icon: "fas fa-sign-in-alt",
+			link: "/checkin",
+			class: "card-checkin"
 		},
 		{
 			id: 3,
+			section: "Check Out",
+			body: "Key Check Out",
+			icon: "fas fa-sign-out-alt",
+			link: "/checkout",
+			class: "card-checkout"
+		},
+		{
+			id: 4,
 			section: "Search",
 			body: "Lookup VINs & Slots",
 			icon: "fas fa-search",
@@ -34,7 +42,7 @@ export default function Home() {
 			class: "card-search"
 		},
 		{
-			id: 4,
+			id: 5,
 			section: "Reports",
 			body: "Generate Any & All Reports",
 			icon: "fas fa-file-alt",
@@ -42,13 +50,21 @@ export default function Home() {
 			class: "card-reports"
 		},
 		{
-			id: 5,
+			id: 6,
 			section: "Dashboard",
 			body: "Dashboard Stuff",
 			icon: "fas fa-tachometer-alt",
 			link: "/dashboard",
 			class: "card-dashboard"
-		}
+		},
+		/*{
+			id: 2,
+			section: "Containers",
+			body: "Create, Fill, & Empty Containers",
+			icon: "fas fa-box-open",
+			link: "/containers",
+			class: "card-containers"
+		},*/
 	];
 	return (
 		<>
