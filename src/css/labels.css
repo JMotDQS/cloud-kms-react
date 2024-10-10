@@ -1,0 +1,13 @@
+.grid-container-labels {
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.card-labels {
+	grid-column: 2/6;
+}
+
+@media (width < 600px) {
+	.card-labels {
+		grid-column: 1/-1;
+	}
+}

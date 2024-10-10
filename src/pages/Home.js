@@ -15,7 +15,7 @@ export default function Home() {
 			body: "Print QR Code VIN labels",
 			icon: "fas fa-qrcode",
 			link: "/labels",
-			class: "card-labels"
+			class: "card-home-labels"
 		},
 		{
 			id: 2,
@@ -23,7 +23,7 @@ export default function Home() {
 			body: "Key Check In",
 			icon: "fas fa-sign-in-alt",
 			link: "/checkin",
-			class: "card-checkin"
+			class: "card-home-checkin"
 		},
 		{
 			id: 3,
@@ -31,7 +31,7 @@ export default function Home() {
 			body: "Key Check Out",
 			icon: "fas fa-sign-out-alt",
 			link: "/checkout",
-			class: "card-checkout"
+			class: "card-home-checkout"
 		},
 		{
 			id: 4,
@@ -39,7 +39,7 @@ export default function Home() {
 			body: "Lookup VINs & Slots",
 			icon: "fas fa-search",
 			link: "/search",
-			class: "card-search"
+			class: "card-home-search"
 		},
 		{
 			id: 5,
@@ -47,7 +47,7 @@ export default function Home() {
 			body: "Generate Any & All Reports",
 			icon: "fas fa-file-alt",
 			link: "/reports",
-			class: "card-reports"
+			class: "card-home-reports"
 		},
 		{
 			id: 6,
@@ -55,7 +55,7 @@ export default function Home() {
 			body: "Dashboard Stuff",
 			icon: "fas fa-tachometer-alt",
 			link: "/dashboard",
-			class: "card-dashboard"
+			class: "card-home-dashboard"
 		},
 		/*{
 			id: 2,
@@ -68,7 +68,7 @@ export default function Home() {
 	];
 	return (
 		<>
-			<div className="grid-container">
+			<div className="grid-container grid-container-home">
 			
 				{sections.map(section => (
 					<div className={`card ${section.class}`} key={section.id} onClick={() => onClickNavigate(section.link)}>

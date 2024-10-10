@@ -1,137 +1,116 @@
-.grid-container {
-	display: grid;
-	margin-inline: auto;
-	gap: var(--full-rem);
-	justify-content: stretch;
-	align-items: center;
+.grid-container-home {
 	grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
 }
 
-.card {
-	border: 1px solid #000000;
-	border-radius: var(--half-rem);
-	padding: var(--half-rem);
-	text-align: center;
-	cursor: pointer;
-}
-
-.card-body {
-	font-weight: 500;
-	font-size: var(--full-rem);
-}
-
-.card-checkin {
+.card-home-checkin {
 	border-color: var(--color-checkin-dark);
 	background-color: var(--color-checkin-background);
 }
-.card-checkin .card-icon {
+.card-home-checkin .card-icon {
 	font-size: calc(var(--full-rem) * 2);
 	color: var(--color-checkin-dark);
 }
-.card-checkin:hover {
+.card-home-checkin:hover {
 	background-color: var(--color-checkin-hover);
 }
-.card-checkin:hover .card-icon {
+.card-home-checkin:hover .card-icon {
 	color: var(--color-content-hover);
 }
 
-.card-checkout {
+.card-home-checkout {
 	border-color: var(--color-checkout-dark);
 	background-color: var(--color-checkout-background);
 }
-.card-checkout .card-icon {
+.card-home-checkout .card-icon {
 	font-size: calc(var(--full-rem) * 2);
 	color: var(--color-checkout-dark);
 }
-.card-checkout:hover {
+.card-home-checkout:hover {
 	background-color: var(--color-checkout-hover);
 }
-.card-checkout:hover .card-icon {
+.card-home-checkout:hover .card-icon {
 	color: var(--color-content-hover);
 }
 
-.card-labels {
+.card-home-labels {
 	border-color: var(--color-labels-dark);
 	background-color: var(--color-labels-background);
 }
-.card-labels .card-icon {
+.card-home-labels .card-icon {
 	font-size: calc(var(--full-rem) * 2);
 	color: var(--color-labels-dark);
 }
-.card-labels:hover {
+.card-home-labels:hover {
 	background-color: var(--color-labels-hover);
 }
-.card-labels:hover .card-icon {
+.card-home-labels:hover .card-icon {
 	color: var(--color-content-hover);
 }
 
-.card-containers {
+.card-home-containers {
 	border-color: var(--color-containers-dark);
 	background-color: var(--color-containers-background);
 }
-.card-containers .card-icon {
+.card-home-containers .card-icon {
 	font-size: calc(var(--full-rem) * 2);
 	color: var(--color-containers-dark);
 }
-.card-containers:hover {
+.card-home-containers:hover {
 	background-color: var(--color-containers-hover);
 }
-.card-containers:hover .card-icon {
+.card-home-containers:hover .card-icon {
 	color: var(--color-content-hover);
 }
 
-.card-search {
+.card-home-search {
 	border-color: var(--color-search-dark);
 	background-color: var(--color-search-background);
 }
-.card-search .card-icon {
+.card-home-search .card-icon {
 	font-size: calc(var(--full-rem) * 2);
 	color: var(--color-search-dark);
 }
-.card-search:hover {
+.card-home-search:hover {
 	background-color: var(--color-search-hover);
 }
-.card-search:hover .card-icon {
+.card-home-search:hover .card-icon {
 	color: var(--color-content-hover);
 }
 
-.card-reports {
+.card-home-reports {
 	border-color: var(--color-reports-dark);
 	background-color: var(--color-reports-background);
 }
-.card-reports .card-icon {
+.card-home-reports .card-icon {
 	font-size: calc(var(--full-rem) * 2);
 	color: var(--color-reports-dark);
 }
-.card-reports:hover {
+.card-home-reports:hover {
 	background-color: var(--color-reports-hover);
 }
-.card-reports:hover .card-icon {
+.card-home-reports:hover .card-icon {
 	color: var(--color-content-hover);
 }
 
-.card-dashboard {
+.card-home-dashboard {
 	border-color: var(--color-dashboard-dark);
 	background-color: var(--color-dashboard-background);
 }
-.card-dashboard .card-icon {
+.card-home-dashboard .card-icon {
 	font-size: calc(var(--full-rem) * 2);
 	color: var(--color-dashboard-dark);
 }
-.card-dashboard:hover {
+.card-home-dashboard:hover {
 	background-color: var(--color-dashboard-hover);
 }
-.card-dashboard:hover .card-icon {
+.card-home-dashboard:hover .card-icon {
 	color: var(--color-content-hover);
 }
 
+
+
 @media (width < 600px) {
-	.grid-container {
-		display: grid;
-		margin-inline: auto;
-		gap: var(--full-rem);
-		justify-content: stretch;
-		align-items: center;
+	.grid-container-home {
 		grid-template-columns: 1fr;
 	}
 }
