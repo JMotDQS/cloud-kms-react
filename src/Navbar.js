@@ -5,7 +5,9 @@ function Navbar() {
 	return (
 		<>
 			<nav id="nav">
-				<img src={logo} id="logo-header" className="nav-logo" data-page='kms' alt="" />
+				<div className="nav-logo-container">
+					<img src={logo} id="logo-header" className="nav-logo" data-page='kms' alt="" />
+				</div>
 				<ul className="nav-links">
 					{/*<NavbarCustomLink to="/containers">Containers</NavbarCustomLink>
 					<li className="navbar-item nav-item-divider">|</li>
