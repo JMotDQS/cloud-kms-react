@@ -4,6 +4,7 @@
 
 .card-labels {
 	grid-column: 2/6;
+	cursor: default;
 }
 
 @media (width < 600px) {
