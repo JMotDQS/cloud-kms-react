@@ -1,3 +1,5 @@
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar';
 import Home from './pages/Home';
 import Containers from './pages/Containers';
@@ -7,12 +9,18 @@ import Dashboard from './pages/Dashboard';
 import Labels from './pages/Labels';
 import CheckIn from './pages/CheckIn';
 import CheckOut from './pages/CheckOut';
-import { Route, Routes } from 'react-router-dom';
+import Store from './Store';
+import EmployeesComponent from './EmployeesComponent';
 
 function App() {
 	return (
 		<>
 			<Navbar />
+
+			<Store>
+				<EmployeesComponent />
+			</Store>
+
 			<div className="main-container">
 				<Routes>
 					<Route path="/" element={<Home />} />
