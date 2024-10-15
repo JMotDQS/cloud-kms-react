@@ -9,17 +9,17 @@ import Dashboard from './pages/Dashboard';
 import Labels from './pages/Labels';
 import CheckIn from './pages/CheckIn';
 import CheckOut from './pages/CheckOut';
-import Store from './Store';
-import EmployeesComponent from './EmployeesComponent';
+//import Store from './Store';
+//import EmployeesComponent from './EmployeesComponent';
 
 function App() {
 	return (
 		<>
 			<Navbar />
 
-			<Store>
+			{/*<Store>
 				<EmployeesComponent />
-			</Store>
+			</Store>*/}
 
 			<div className="main-container">
 				<Routes>
