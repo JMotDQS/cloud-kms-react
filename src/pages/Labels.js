@@ -19,6 +19,20 @@ export default function Labels() {
 	);
 
 	const handleScan = (data) => {
+		alert("Checking VIN: " + data + " against register table...");
+		let result = true;
+		if(result) {
+			//was found
+			alert("This is a re-print.");
+		} else {
+			//was not found
+			alert("This is a new print.");
+			alert("Adding VIN to register table.");
+		}
+		alert("Adding VIN and action to key_tracking table.");
+		alert("Adding VIN and action to key_tracking_historical table.");
+		alert("Printing your new QR Code label.");
+		
 		setVinObj({
 			vin: data,
 			vin_emp_id: userUUID.emp_id
