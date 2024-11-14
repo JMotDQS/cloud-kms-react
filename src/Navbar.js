@@ -14,8 +14,8 @@ function Navbar() {
 					<NavbarCustomLink to="/search">Search</NavbarCustomLink>
 					<li className="navbar-item nav-item-divider">|</li>
 					<NavbarCustomLink to="/reports">Reports</NavbarCustomLink>
-					<li className="navbar-item nav-item-divider">|</li>
-					<NavbarCustomLink to="/dashboard">Dashboard</NavbarCustomLink>*/}
+					<li className="navbar-item nav-item-divider">|</li>*/}
+					<NavbarCustomLink to="/documents">Docs</NavbarCustomLink>
 					<li className="navbar-item nav-item-divider">|</li>
 					<NavbarCustomLink to="/">KMS</NavbarCustomLink>
 					<li className="navbar-item nav-item-divider">|</li>
