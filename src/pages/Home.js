@@ -63,7 +63,7 @@ export default function Home() {
 			<div className="grid-container grid-container-home">
 			
 				{sections.map(section => (
-					<div className={`card ${section.class}`} key={section.id} onClick={() => onClickNavigate('/' + section.section.replaceAll(' ','').toLowerCase())}>
+					<div className={`card ${'card-' + section.section.replaceAll(' ','').toLowerCase()}`} key={section.id} onClick={() => onClickNavigate('/' + section.section.replaceAll(' ','').toLowerCase())}>
 						<h1>{section.section}</h1>
 						<p className="card-body">{section.body}</p>
 						<p className="card-icon"><FontAwesomeIcon icon={section.icon} /></p>
