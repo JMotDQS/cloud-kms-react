@@ -43,13 +43,14 @@ export default function Labels() {
 		if(result) {
 			//was found
 			alert("This is a re-print.");
+			alert("Updating VIN record with action in the key_tracking table.");
 		} else {
 			//was not found
 			alert("This is a new print.");
 			alert("Adding VIN to register table.");
+			alert("Adding VIN and action to key_tracking table.");
+			alert("Adding VIN and action to key_tracking_historical table.");
 		}
-		alert("Adding VIN and action to key_tracking table.");
-		alert("Adding VIN and action to key_tracking_historical table.");
 		alert("Printing your new QR Code label.");*/
 	};
 
