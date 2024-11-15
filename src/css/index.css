@@ -80,6 +80,7 @@ body {
 
 .main-container {
 	padding-inline: var(--full-rem);
+	margin-inline: auto;
 }
 
 .grid-container {
