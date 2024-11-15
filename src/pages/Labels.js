@@ -67,15 +67,7 @@ export default function Labels() {
 						<BarcodeReader onError={handleError} onScan={handleScan} />
 						<p>Scanned VIN: {vinObj.vin}</p>
 						<p>{scanFeedback}</p>
-						{/*<p>User: {userUUID.last_name}, {userUUID.first_name}</p>
-						<p>User ID: {userUUID.emp_id}</p>*/}
 					</div>
-					{/*<p>--------------------------------------------------------------------</p>
-					<div>
-						<BarcodeReader onError={handleError} onScan={handleScan} />
-						<p>Scanned VIN: {vinObj.vin}</p>
-						<p>By User ID: {vinObj.vin_emp_id}</p>
-					</div>*/}
 				</div>
 			</div>
 		</>
