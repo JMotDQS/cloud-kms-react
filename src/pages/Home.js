@@ -56,15 +56,7 @@ export default function Home() {
 			icon: "fas fa-tachometer-alt",
 			link: "/dashboard",
 			class: "card-dashboard"
-		},
-		/*{
-			id: 2,
-			section: "Containers",
-			body: "Create, Fill, & Empty Containers",
-			icon: "fas fa-box-open",
-			link: "/containers",
-			class: "card-containers"
-		},*/
+		}
 	];
 	return (
 		<>
