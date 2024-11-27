@@ -17,7 +17,6 @@ export default function Labels() {
 			vin_emp_id: userUUID.emp_id
 		}
 	);
-
 	const [scanFeedback, setScanFeedback] = useState('');
 
 	const handleScan = (data) => {
@@ -26,8 +25,8 @@ export default function Labels() {
 			vin_emp_id: userUUID.emp_id
 		});
 
-		let result = false;
-		if(result) {
+		let newVIN = false;
+		if(newVIN) {
 			//was found
 			//alert("This is a re-print.");
 			setScanFeedback('VIN found, re-printing label');
@@ -66,7 +65,7 @@ export default function Labels() {
 					<div className="card-body">
 						<p>Please scan VIN for label.</p>
 						<BarcodeReader onError={handleError} onScan={handleScan} />
-						<p>Scanned VIN: {vinObj.vin}</p>
+						<label for="test-vin">Scanned VIN: </label><input type='text' id="test-vin" name="test-vin" value={vinObj.vin} />
 						<p>{scanFeedback}</p>
 					</div>
 				</div>
