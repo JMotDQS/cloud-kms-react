@@ -2,6 +2,20 @@ import React, { useState } from 'react';
 import BarcodeReader from 'react-barcode-reader';
 
 export default function Labels() {
+	//var g_PRINT_USER_OBJ = {};
+	//onclick="printItem(this)">
+	/*const printItem = (param_obj) => {
+		var temp_array = param_obj.id.split('_');
+		var selected_user_id = parseInt(temp_array[(temp_array.length - 1)]);
+	
+		g_PRINT_USER_OBJ = {
+			'first_name': g_USER_SEARCH[parseInt($('#' + param_obj.id).data('index'))]['first_name'],
+			'last_name': g_USER_SEARCH[parseInt($('#' + param_obj.id).data('index'))]['last_name'],
+			'badge_id': g_USER_SEARCH[parseInt($('#' + param_obj.id).data('index'))]['badge_id']
+		}
+		console.log("g_PRINT_USER_OBJ:", g_PRINT_USER_OBJ);
+	}*/
+
 	const [userUUID] = useState(
 		{
 			pk_id: "23547631-FC95-4FBA-A815-70450FC2AC37",
