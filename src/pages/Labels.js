@@ -34,37 +34,24 @@ export default function Labels() {
 	const [scanFeedback, setScanFeedback] = useState('');
 
 	const handleScan = (data) => {
+		let cleanVIN = data;
+		if (data.charAt(0).toUpperCase() === "I") {
+			cleanVIN = data.substring(1);
+		}
+
 		setVinObj({
-			vin: data,
+			vin: cleanVIN,
 			vin_emp_id: userUUID.emp_id
 		});
 
-		let newVIN = false;
-		if(newVIN) {
-			//was found
-			//alert("This is a re-print.");
-			setScanFeedback('VIN found, re-printing label');
+		let isNewVIN = Math.round(Math.random());
+		if(isNewVIN) {
+			//VIN not registered
+			setScanFeedback('New VIN. Registering VIN and printing label');
 		} else {
-			//was not found
-			//alert("This is a new print.");
-			//alert("Adding VIN to register table.");
-			setScanFeedback('New VIN, printing label');
+			//VIN registered
+			setScanFeedback('VIN found. Re-printing label');
 		}
-		
-		/*alert("Checking VIN: " + data + " against register table...");
-		let result = true;
-		if(result) {
-			//was found
-			alert("This is a re-print.");
-			alert("Updating VIN record with action in the key_tracking table.");
-		} else {
-			//was not found
-			alert("This is a new print.");
-			alert("Adding VIN to register table.");
-			alert("Adding VIN and action to key_tracking table.");
-			alert("Adding VIN and action to key_tracking_historical table.");
-		}
-		alert("Printing your new QR Code label.");*/
 	};
 
 	const handleError = (err) => {
@@ -79,7 +66,9 @@ export default function Labels() {
 					<div className="card-body">
 						<p>Please scan VIN for label.</p>
 						<BarcodeReader onError={handleError} onScan={handleScan} />
-						<label for="test-vin">Scanned VIN: </label><input type='text' id="test-vin" name="test-vin" value={vinObj.vin} />
+						<p>Scanned VIN: {vinObj.vin}</p>
+						{/*<label htmlFor="test-vin">Scanned VIN: </label><input type='text' id="test-vin" name="test-vin" onChange={handleScan} value={vinObj.vin} />*/}
+						{/*<label htmlFor="test-vin">Scanned VIN: </label><input type='text' id="test-vin" name="test-vin" />*/}
 						<p>{scanFeedback}</p>
 					</div>
 				</div>
