@@ -52,6 +52,16 @@ export default function Labels() {
 			//VIN registered
 			setScanFeedback('VIN found. Re-printing label');
 		}
+
+		setTimeout(printLabel, 2000);
+	};
+
+	const printLabel = () => {
+		setScanFeedback('');
+		setVinObj({
+			vin: '',
+			vin_emp_id: userUUID.emp_id
+		});
 	};
 
 	const handleError = (err) => {
